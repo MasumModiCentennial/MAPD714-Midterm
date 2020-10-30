@@ -50,34 +50,44 @@
                                         <rect key="frame" x="0.0" y="359" width="374" height="368"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IW2-P9-9cd">
-                                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingListItem" id="IW2-P9-9cd">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IW2-P9-9cd" id="lTW-iu-qkN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="52.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1Z-7C-nBS">
-                                                            <rect key="frame" x="20" y="4" width="154" height="34"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1Z-7C-nBS">
+                                                            <rect key="frame" x="20" y="10" width="200" height="32.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="48a-aV-T7Y">
-                                                            <rect key="frame" x="260" y="5" width="94" height="32"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="48a-aV-T7Y">
+                                                            <rect key="frame" x="260" y="10" width="94" height="32.5"/>
                                                         </stepper>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-TZ-u3e">
-                                                            <rect key="frame" x="235" y="9" width="17" height="24"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBC-TZ-u3e">
+                                                            <rect key="frame" x="240" y="10" width="10" height="32.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="wBC-TZ-u3e" firstAttribute="top" secondItem="lTW-iu-qkN" secondAttribute="top" constant="10" id="1wB-s1-2dN"/>
+                                                        <constraint firstItem="wBC-TZ-u3e" firstAttribute="leading" secondItem="q1Z-7C-nBS" secondAttribute="trailing" constant="20" id="2YU-vw-4nA"/>
+                                                        <constraint firstItem="q1Z-7C-nBS" firstAttribute="leading" secondItem="lTW-iu-qkN" secondAttribute="leading" constant="20" id="7KF-nb-XmJ"/>
+                                                        <constraint firstItem="48a-aV-T7Y" firstAttribute="top" secondItem="lTW-iu-qkN" secondAttribute="top" constant="10" id="9Gr-iY-V97"/>
+                                                        <constraint firstAttribute="trailing" secondItem="48a-aV-T7Y" secondAttribute="trailing" constant="20" id="T56-dM-H2J"/>
+                                                        <constraint firstItem="48a-aV-T7Y" firstAttribute="leading" secondItem="wBC-TZ-u3e" secondAttribute="trailing" constant="10" id="UXr-Gg-lJa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="48a-aV-T7Y" secondAttribute="bottom" constant="10" id="Uoc-fz-xSr"/>
+                                                        <constraint firstAttribute="bottom" secondItem="q1Z-7C-nBS" secondAttribute="bottom" constant="10" id="fyJ-CY-MZO"/>
+                                                        <constraint firstItem="q1Z-7C-nBS" firstAttribute="top" secondItem="lTW-iu-qkN" secondAttribute="top" constant="10" id="sPU-Qn-JhX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wBC-TZ-u3e" secondAttribute="bottom" constant="10" id="u6T-Kx-Jd8"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
+                                        <sections/>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="LjW-cO-uvv">
                                         <rect key="frame" x="0.0" y="742" width="374" height="36"/>
@@ -125,6 +135,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="1J0-aE-i42" id="O5i-Zf-PKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
