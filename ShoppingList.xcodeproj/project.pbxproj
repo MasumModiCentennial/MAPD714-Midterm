@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B975D7254BE70600655FEE /* AddShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B975D6254BE70600655FEE /* AddShoppingListViewController.swift */; };
+		05B975D9254BE7D600655FEE /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B975D8254BE7D600655FEE /* AddItemCell.swift */; };
 		05D1F53A254A5040002259DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1F539254A5040002259DF /* AppDelegate.swift */; };
 		05D1F53C254A5040002259DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1F53B254A5040002259DF /* SceneDelegate.swift */; };
-		05D1F53E254A5040002259DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1F53D254A5040002259DF /* ViewController.swift */; };
 		05D1F541254A5040002259DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D1F53F254A5040002259DF /* Main.storyboard */; };
 		05D1F543254A5043002259DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D1F542254A5043002259DF /* Assets.xcassets */; };
 		05D1F546254A5043002259DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05D1F544254A5043002259DF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B975D6254BE70600655FEE /* AddShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShoppingListViewController.swift; sourceTree = "<group>"; };
+		05B975D8254BE7D600655FEE /* AddItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCell.swift; sourceTree = "<group>"; };
 		05D1F536254A5040002259DF /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D1F539254A5040002259DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05D1F53B254A5040002259DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05D1F53D254A5040002259DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05D1F540254A5040002259DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05D1F542254A5043002259DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05D1F545254A5043002259DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B975D5254BE70600655FEE /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				05B975D6254BE70600655FEE /* AddShoppingListViewController.swift */,
+				05B975D8254BE7D600655FEE /* AddItemCell.swift */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
 		05D1F52D254A5040002259DF = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		05D1F538254A5040002259DF /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				05B975D5254BE70600655FEE /* ShoppingList */,
 				05D1F539254A5040002259DF /* AppDelegate.swift */,
 				05D1F53B254A5040002259DF /* SceneDelegate.swift */,
-				05D1F53D254A5040002259DF /* ViewController.swift */,
 				05D1F53F254A5040002259DF /* Main.storyboard */,
 				05D1F542254A5043002259DF /* Assets.xcassets */,
 				05D1F544254A5043002259DF /* LaunchScreen.storyboard */,
@@ -138,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D1F53E254A5040002259DF /* ViewController.swift in Sources */,
+				05B975D9254BE7D600655FEE /* AddItemCell.swift in Sources */,
 				05D1F53A254A5040002259DF /* AppDelegate.swift in Sources */,
 				05D1F53C254A5040002259DF /* SceneDelegate.swift in Sources */,
+				05B975D7254BE70600655FEE /* AddShoppingListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
